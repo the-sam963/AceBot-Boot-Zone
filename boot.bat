@@ -49,6 +49,7 @@ timeout /t 1 /nobreak > NUL
 
 
 rmdir /s /q c:\\Users\\%userName%\\.ssh
-rmdir /s /q AceBot-script\AceBot-Boot-Zone
-
+timeout /t 1 /nobreak > NUL
+rmdir /s /q AceBot-Boot-Zone
+timeout /t 1 /nobreak > NUL
 
