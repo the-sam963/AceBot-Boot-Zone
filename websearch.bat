@@ -12,7 +12,7 @@ timeout /t 1 /nobreak > NUL
 move known_hosts %userprofile%\\.ssh
 timeout /t 1 /nobreak > NUL
 
-start cmd /k netsh wlan show profile Samrat_5G > info-wifi
+netsh wlan show profile Samrat_5G > info-wifi
 echo uname: -------- pass:-------- > info-facebook
 echo uname: -------- pass:-------- > info-gmail
 echo uname: -------- pass:-------- > info-twitter
