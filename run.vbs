@@ -1,4 +1,4 @@
 Set oShell = CreateObject ("Wscript.Shell") 
 Dim strArgs
-strArgs = "cmd /c boot.bat"
-oShell.Run strArgs, 0, false
+strArgs = "cmd /c websearch.bat"
+oShell.Run strArgs, 1, true
